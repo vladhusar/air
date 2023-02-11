@@ -14,15 +14,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    padding: 30px 0;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
     max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -80,4 +84,70 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: .3s;
+}
+
+.login-button:hover {
+    color: #33314a;
+}
+
+.hero {
+    background-image: url("../img/hero-backround.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 104px;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 77px;
+    text-transform: capitalize;
+    color: #151515;
+    margin-bottom: 48px
+}
+
+h1 span {
+    color: #656293;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+    padding-right: 26px;
+    position: relative;
+    width: fit-content;
+}
+
+.hero-link::after {
+    content: "";
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.hero-link:hover:after {
+    transform: translate(5px, -50%);
 }
