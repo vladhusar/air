@@ -327,11 +327,135 @@ section {
     color: #151515;
 }
 
-.planes-backround {
+.planes-background {
     position: absolute;
-    
+    top: 208px;
+    right: -64px;
+    z-index: -1;
 }
 
 .planes {
     position: relative;
+}
+
+.membership-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.membership-item {
+    width: calc((100% -48px) / 3);
+    padding: 24px;
+    background-color: #F5F5F5;
+}
+
+.membership-item:nth-child(2) {
+    background-color: #656293;
+    transform: translateY(-30px);
+}
+
+.membership-item:nth-child(2) button {
+    background-color: white;
+    color: #151515;
+}
+
+.membership-item:nth-child(2) h3 {
+    color: white;
+}
+
+.membership-item:nth-child(2) .advantages-item {
+    color: white;
+}
+
+.membership-item:nth-child(2) .prize {
+    color: white;
+}
+
+.membership-item:first-child {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.membership-item:last-child {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.membership-item h3 {
+    font-weight: 700;
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.membership-advantages {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 24px;
+    color: #A9A9AA;
+}
+
+.advantages-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+    padding-left: 30px;
+    position: relative;
+}
+
+.advantages-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.advantages-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.advantages-item.tick::before {
+    background-image: url(../img/black-tick.svg);
+}
+
+.advantages-item.cross::before {
+    background-image: url(../img/black-cross.svg);
+}
+
+.advantages-list {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #A9A9AA;
+}
+
+.prize {
+    padding-top: 70px;
+    color: #161616;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.advantages-button {
+    background: #656293;
+    padding: 12px 16px;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    margin-top: 24px;
+    border: 0;
+    font-size: 22px;
+}
+.footer-image{
+    margin: 0 auto;
 }
