@@ -21,7 +21,10 @@ body {
     left: 0;
     width: 100%;
     padding: 30px 0;
+    background-color: white;
+    z-index: 10;
 }
+
 
 .container {
     max-width: 1150px;
@@ -48,13 +51,24 @@ body {
     list-style: none;
     gap: 20px;
     align-items: center;
+}
 
+@media screen and (max-width:1024px) {
+    .nav-list {
+        display: none;
+    }
 }
 
 .header-buttons {
     display: flex;
     margin-left: 95px;
     align-items: center;
+}
+
+@media screen and (max-width:700) {
+    .header-buttons {
+        display: none;
+    }
 }
 
 .nav-link {
@@ -228,7 +242,7 @@ p {
 }
 
 section {
-    padding-top: 115px;
+    padding-bottom: 115px;
 }
 
 .business-top::before {
@@ -336,6 +350,7 @@ section {
 
 .planes {
     position: relative;
+    overflow: hidden;
 }
 
 .membership-list {
@@ -402,6 +417,7 @@ section {
     color: #151515;
     padding-left: 30px;
     position: relative;
+    list-style: none;
 }
 
 .advantages-item:not(:last-child) {
@@ -428,6 +444,16 @@ section {
 .advantages-item.cross::before {
     background-image: url(../img/black-cross.svg);
 }
+
+.membership-item:nth-child(2) .advantages-item.tick:before {
+    background-image: url(../img/white-tick.svg);
+}
+
+.membership-item:nth-child(2) .advantages-item.cross:before {
+    background-image: url(../img/white-cross.svg);
+
+}
+
 
 .advantages-list {
     padding-bottom: 20px;
@@ -456,6 +482,56 @@ section {
     border: 0;
     font-size: 22px;
 }
-.footer-image{
+
+.footer-image {
     margin: 0 auto;
+}
+
+.footer-bottom {
+    background: #656293;
+}
+
+.footer-logo {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo a {
+    display: block;
+    height: fit-content;
+}
+
+.footer-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    padding-top: 17px;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-info nav {
+    flex: 1;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
 }
