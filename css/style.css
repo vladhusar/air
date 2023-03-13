@@ -332,8 +332,6 @@ section {
     z-index: -1;
 }
 
-
-
 .business-bottom::before {
     content: "";
     position: absolute;
@@ -366,12 +364,26 @@ section {
     position: relative;
 }
 
+@media screen and (max-width:768px) {
+    .services-list {
+        column-gap: 10px;
+        row-gap: 350px;
+        justify-content: space-between;
+    }
+}
+
 .services-item {
     width: calc((100% - 370px) / 2);
     padding: 40px 52px 51px 52px;
     box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
     border-radius: 12px;
     text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .services-item {
+        width: 47%;
+    }
 }
 
 .services-image {
@@ -400,12 +412,25 @@ section {
     justify-content: space-between;
 }
 
+@media screen and (max-width:768px) {
+    .planes-list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
 .planes-item {
     width: calc((100% - 90px)/4);
     background: var(--main-color);
     box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
     border-radius: 12px;
     padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .planes-item {
+        width: calc((100% - 30px) / 2);
+    }
 }
 
 .imgwrapper {
@@ -446,10 +471,23 @@ section {
     gap: 24px;
 }
 
+@media screen and (max-width:768px) {
+    .membership-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 .membership-item {
     width: calc((100% -48px) / 3);
     padding: 24px;
     background-color: #F5F5F5;
+}
+
+@media screen and (max-width:768px) {
+    .membership-item {
+        width: 100%;
+    }
 }
 
 .membership-item:nth-child(2) {
@@ -480,6 +518,14 @@ section {
 
 .membership-item:last-child {
     border-radius: 0px 20px 20px 0px;
+}
+
+@media screen and (max-width:768px) {
+    .membership-list .membership-item {
+        width: 100%;
+        transform: translateY(0);
+        border-radius: 20px;
+    }
 }
 
 .membership-item h3 {
