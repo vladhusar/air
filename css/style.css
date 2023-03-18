@@ -248,6 +248,13 @@ h2 {
     margin-bottom: 64px;
 }
 
+@media screen and (max-width:480px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+}
+
+
 h2:before {
     content: "";
     width: 40px;
@@ -288,10 +295,22 @@ h2:before {
     order: 2;
 }
 
+.business {
+    padding-top: 40px;
+}
+
 .business-top,
 .business-bottom {
     padding: 65px 0;
     position: relative;
+}
+
+@media screen and (max-width:480px) {
+
+    .business-bottom img,
+    .business-top img {
+        max-width: 400px;
+    }
 }
 
 img {
@@ -356,6 +375,14 @@ section {
     }
 }
 
+@media screen and (max-width:480px) {
+
+    .business-bottom::before,
+    .business-top::before {
+        display: none;
+    }
+}
+
 .services-list {
     display: flex;
     flex-wrap: wrap;
@@ -369,6 +396,13 @@ section {
         column-gap: 10px;
         row-gap: 350px;
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .services-list {
+        justify-content: space-between;
+        gap: 20px;
     }
 }
 
@@ -386,12 +420,24 @@ section {
     }
 }
 
+@media screen and (max-width:480px) {
+    .services-item {
+        width: 100%;
+    }
+}
+
 .services-image {
     max-width: 297px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:480px) {
+    .services-image {
+        display: none;
+    }
 }
 
 .services-item img {
