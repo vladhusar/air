@@ -130,7 +130,7 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .header-buttons {
         display: none;
     }
@@ -185,6 +185,12 @@ body {
     padding-top: 104px;
 }
 
+@media screen and (max-width:480px) {
+    .hero {
+        padding: 72px 0px;
+    }
+}
+
 .hero .container {
     display: flex;
     flex-direction: column;
@@ -199,6 +205,13 @@ h1 {
     text-transform: capitalize;
     color: #151515;
     margin-bottom: 48px
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 h1 span {
@@ -251,6 +264,8 @@ h2 {
 @media screen and (max-width:480px) {
     h2 {
         margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 28px;
     }
 }
 
@@ -267,6 +282,13 @@ h2:before {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+
+@media screen and (max-width:480px) {
+    h2:before {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .business-top .container,
@@ -287,11 +309,11 @@ h2:before {
 }
 
 .business-top img {
-    max-width: 576px;
+    width: 576px;
 }
 
 .business-bottom img {
-    max-width: 612px;
+    width: 612px;
     order: 2;
 }
 
@@ -309,7 +331,7 @@ h2:before {
 
     .business-bottom img,
     .business-top img {
-        max-width: 400px;
+        width: 400px;
     }
 }
 
@@ -336,6 +358,12 @@ p {
 
 section {
     padding-bottom: 115px;
+}
+
+@media screen and (max-width:480px) {
+    section {
+        padding-bottom: 72px;
+    }
 }
 
 .business-top::before {
@@ -465,6 +493,13 @@ section {
     }
 }
 
+@media screen and (max-width:480px) {
+    .planes-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .planes-item {
     width: calc((100% - 90px)/4);
     background: var(--main-color);
@@ -476,6 +511,13 @@ section {
 @media screen and (max-width:768px) {
     .planes-item {
         width: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .planes-item {
+        width: 100%;
+        max-width: 360px;
     }
 }
 
@@ -664,6 +706,7 @@ section {
 
 .footer-image {
     margin: 0 auto;
+    padding: 0px 16px;
 }
 
 .footer-bottom {
@@ -691,6 +734,13 @@ section {
     justify-content: space-between;
 }
 
+@media screen and (max-width:768px) {
+    .footer-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 .footer-info nav {
     flex: 1;
 }
@@ -699,6 +749,14 @@ section {
     display: flex;
     gap: 30px;
     list-style: none;
+}
+
+@media screen and (max-width:480px) {
+    .footer-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 }
 
 .footer-link {
