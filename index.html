@@ -2,199 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./fonts.css" />
-    <script src="./index.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header class="header">
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <a href="./index.html">
+          <img src="./img/logo.svg" alt="logo" />
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Booking</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Private Jet</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Specification</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Luxury Charters</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Membership</a>
+          </li>
+        </ul class="nav-list">
+      </nav class="navigation">
+      <div class="header-buttons">
+        <button class="reg-button">Register</button>
+        <button class="login-button">Sign In</button>
+        <button class="menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header class="header">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Enjoy <span> Reserved</span>
+          <br> Overhead bin space
+        </h1>
+        <a class="hero-link" href="#">Explore Now</a>
+      </div>
+    </section>
+    <section class="business">
+      <h2>Private Jet for Business & Leisure Purposes</h2>
+      <div class="business-top">
         <div class="container">
-            <nav class="header-menu">
-                <ul class="header-list">
-                    <li>Home</li>
-                    <li>About me</li>
-                    <li>Skills</li>
-                    <li>Portfolio</li>
-                    <li>Contacts</li>
-                </ul>
-            </nav>
+          <img alt="plane1" src="./img/plane1.jpg">
+          <div class="info">
+            <h3>
+              Private Jet Charter
+            </h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors
+            </p>
+          </div>
         </div>
-    </header>
-    <main>
-        <section class="banner">
-            <div class="container">
-                <div class="banner-info">
-                    <h1>Vlad Husar</h1>
-                    <p>Front-end develper
-                        14 years old, Ukraine</p>
-                </div>
-                <img class="banner-img" alt="banner" src="./img/Banner.png">
+      </div>
+      <div class="business-bottom">
+        <div class="container">
+          <img alt="plane2" src="./img/plane2.jpg">
+          <div class="info">
+            <h3>
+              Business Jet Charter
+            </h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2>
+          Private Jet Performance and Specifications
+        </h2>
+        <div class="services-list">
+          <div class="services-item"><img src="./img/service icon1.svg" alt="service1">
+            <h3>
+              Luxury And Comfort
+            </h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable
+            </p>
+          </div>
+          <div class="services-item"><img src="./img/service icon2.svg" alt="service2">
+            <h3>
+              SAFETY AND SECURITY
+            </h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable
+            </p>
+          </div>
+          <div class="services-item"><img src="./img/service icon3.svg" alt="service3">
+            <h3>
+              Personal schedule & booking
+            </h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable
+            </p>
+          </div>
+          <div class="services-item"><img src="./img/service icon4.svg" alt="service4">
+            <h3>
+              EXPERIENCED CREW
+            </h3>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable
+            </p>
+          </div>
+          <img class="services-image" src="./img/plane3.png">
+        </div>
+      </div>
+    </section>
+    <section class="planes">
+      <div class="container">
+        <h2>
+          Luxury Charters
+        </h2>
+        <ul class="planes-list">
+          <li class="planes-item">
+            <div class="imgwrapper"><img class="planes-img" src="./img/planesitem1.jpg" alt="plane5"></div>
+            <p class="planes-text">
+              Piaggio P.180 Avanti
+            </p>
+          </li>
+          <li class="planes-item">
+            <div class="imgwrapper"><img class="planes-img" src="./img/planesitem2.jpg" alt="plane5"></div>
+            <p class="planes-text">
+              Pilatus PC-12
+            </p>
+          </li>
+          <li class="planes-item">
+            <div class="imgwrapper"><img class="planes-img" src="./img/planesitem3.jpg" alt="plane5">
             </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="about-inner">
-                    <h1 class="title">About me</h1>
-                    <div class="about-info">
-                        <li>
-                            Hi, I'm Vlad-UX/UI designer from Ukraine. I'm interested in design and everything connected
-                            with it.
-                        </li>
-                        <li>
-                            I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
-                        </li>
-                        <li>
-                            Ready to implement excellent projects with wonderful people.
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <svg width="21" height="20" xmlns="http://www.w3.org/2000/svg">
-            <symbol viewBox="0 0 21 20" fill="none" id="star" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M9.37679 0.918174C9.67663 -0.00210297 10.9785 -0.00210214 11.2784 0.918175L13.0295 6.29257C13.1636 6.7042 13.5474 6.98278 13.9803 6.98278H19.641C20.6104 6.98278 21.0128 8.22381 20.2278 8.79257L15.6529 12.1072C15.3014 12.3619 15.1544 12.8141 15.2888 13.2268L17.0374 18.5934C17.3374 19.5143 16.2841 20.2812 15.4999 19.713L10.9143 16.3907C10.5643 16.137 10.0909 16.137 9.74087 16.3907L5.15532 19.713C4.37107 20.2812 3.31778 19.5143 3.6178 18.5934L5.36637 13.2268C5.50083 12.8141 5.35375 12.3619 5.00229 12.1072L0.427413 8.79257C-0.357594 8.22381 0.0447371 6.98278 1.01413 6.98278H6.67489C7.10781 6.98278 7.49157 6.7042 7.62569 6.29257L9.37679 0.918174Z"
-                    fill="#E5E5E5" />
-            </symbol>
-        </svg>
-        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
-            <symbol viewBox="0 0 21 20" fill="none" id="star-black" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M10.0853 0.918174C10.3851 -0.00210297 11.687 -0.00210214 11.9869 0.918175L13.738 6.29257C13.8721 6.7042 14.2559 6.98278 14.6888 6.98278H20.3495C21.3189 6.98278 21.7213 8.22381 20.9363 8.79257L16.3614 12.1072C16.0099 12.3619 15.8629 12.8141 15.9973 13.2268L17.7459 18.5934C18.0459 19.5143 16.9926 20.2812 16.2084 19.713L11.6228 16.3907C11.2728 16.137 10.7994 16.137 10.4494 16.3907L5.86382 19.713C5.07956 20.2812 4.02627 19.5143 4.3263 18.5934L6.07487 13.2268C6.20932 12.8141 6.06224 12.3619 5.71078 12.1072L1.13591 8.79257C0.350903 8.22381 0.753233 6.98278 1.72263 6.98278H7.38338C7.81631 6.98278 8.20007 6.7042 8.33419 6.29257L10.0853 0.918174Z"
-                    fill="#070707" />
-            </symbol>
-        </svg>
-        <section class="skills">
-            <div class="container">
-                <div class="skills-inner">
-                    <h1 class="title">
-                        Skills
-                    </h1>
-                    <p>I work in such programs as</p>
-                    <ul class="skills-list">
-                        <li class="skills-item">
-                            <img src="./img/PhotoshopPS.png" alt="photoshop1">
-                            <p class="skills-name">
-                                Adobe
-                                Photoshop
-                            </p>
-                            <p class="c-rate">
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </p>
-                        </li>
-                        <li class="skills-item">
-                            <img src="./img/AIphotoshop.png" alt="photoshop2">
-                            <p class="skills-name">
-                                Adobe
-                                Illustrator
-                            </p>
-                            <p class="c-rate">
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </p>
-                        </li>
-                        <li class="skills-item">
-                            <img src="./img/PhotoshopAe.png" alt="photoshop3">
-                            <p class="skills-name">
-                                Adobe
-                                After Effects
-                            </p>
-                            <p class="c-rate">
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </p>
-                        </li>
-                        <li class="skills-item">
-                            <img src="./img/figma.png" alt="photoshop4">
-                            <p class="skills-name">
-                                Figma
-                            </p>
-                            <p class="c-rate">
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star-black"></use>
-                                </svg>
-                                <svg class="c-icon" width="26" height="26">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio">
-            <div class="container">
-                <div class="portfolio-inner">
-                    <h1 class="title">
-                        Portfolio
-                    </h1>
-                    <a href="./"><img src="./img/Air.jpg" alt="Air">
-                        <p>Online fashion store - Homepage</p>
-                    </a>
-                    <a href="./"><img src="./img/Fashion.jpg" alt="Fashion">
-                        <p>Fashion Store - Concept</p>
-                    </a>
-                    <a href="./"><img src="./img/Neapol.jpg" alt="Neapol">
-                        <p>Braun Landing Page - Concept</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+            <p class="planes-text">
+              Piper Pa27 Aztec
+            </p>
+          </li>
+          <li class="planes-item">
+            <div class="imgwrapper"><img class="planes-img" src="./img/planesitem4.jpg" alt="plane5"></div>
+            <p class="planes-text">
+              Beech BE100 King Air
+            </p>
+          </li>
+        </ul>
+        <img class="planes-background" src="./img/planebackround.svg" alt="planebackground">
+      </div>
+    </section>
+    <section class="membership">
+      <div class="container">
+        <h2>Enjoy our membership</h2>
+        <ul class="membership-list">
+          <li class="membership-item">
+            <h3>Popular</h3>
+            <p class="membership-advantages">What You'll Get</p>
+            <ul class="advantages-list">
+              <li class="advantages-item tick">One-time initiation fee $0</li>
+              <li class="advantages-item tick">Deposit $50k</li>
+              <li class="advantages-item cross">Pricing / rates Dynamic</li>
+              <li class="advantages-item cross">Priority fleet access </li>
+              <li class="advantages-item cross">Guaranteed fleet access</li>
+            </ul>
+            <p class="prize"> <span class="number">$250</span>/month</p>
+            <button class="advantages-button">Choose</button>
+          </li>
+
+          <li class="membership-item">
+            <h3>Business</h3>
+            <p class="membership-advantages">What You'll Get</p>
+            <ul class="advantages-list">
+              <li class="advantages-item tick">One-time initiation fee $0</li>
+              <li class="advantages-item tick">Deposit $50k</li>
+              <li class="advantages-item tick">Pricing/rates Dynamic</li>
+              <li class="advantages-item cross">Priority fleet access </li>
+              <li class="advantages-item cross">Guaranteed fleet access</li>
+            </ul>
+            <p class="prize"> <span class="number">$480</span>/month</p> <button
+              class="advantages-button">Choose</button>
+          </li>
+          <li class="membership-item">
+            <h3>Elite</h3>
+            <p class="membership-advantages">What You'll Get</p>
+            <ul class="advantages-list">
+              <li class="advantages-item tick">One-time initiation fee $0</li>
+              <li class="advantages-item tick">Deposit $50k</li>
+              <li class="advantages-item tick">Pricing/rates Dynamic</li>
+              <li class="advantages-item tick">Priority fleet access </li>
+              <li class="advantages-item tick">Guaranteed fleet access</li>
+            </ul>
+            <p class="prize"> <span class="number">$680</span>/month</p> <button
+              class="advantages-button">Choose</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <img class="footer-image" src="./img/plane-largest.png" alt="plane-largest">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="./index.html"> <img src="./img/airport.svg" alt="airport">
+          </a>
+        </div>
+        <div class="footer-info">
+          <nav>
+            <ul class="footer-navigation">
+              <li><a class="footer-link" href="#">SERVICES</a></li>
+              <li><a class="footer-link" href="#">ABOUT US</a></li>
+              <li><a class="footer-link" href="#">NEWS</a></li>
+              <li><a class="footer-link" href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+          <p class="copyright">© 2021 Air. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+<script src="./index.js"></script>
 
 </html>
